@@ -10,6 +10,7 @@
     "lodash": "^4.17.11",
     "prop-types": "latest",
     "react": "^16.4.2",
+    "react-app-rewired": "^1.6.2",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.6",

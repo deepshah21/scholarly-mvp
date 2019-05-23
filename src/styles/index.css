@@ -1,8 +1,8 @@
 @media (max-width: 767px) {
     /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
-    body {
-        padding-top: 50px;
-    }
+    /* body {
+      padding-top: 50px;
+    } */
 }
 :root {
     --top-menu-height: 4em;
@@ -11,14 +11,14 @@
 .top-menu {
     height: var(--top-menu-height);
 }
-.grid {
+/* .grid {
     width: 100%;
     display: grid;
     grid: var(--top-menu-height) / 1fr;
     grid-template-areas:  "menu"
                           "maincontent";
     min-height: 100vh;
-}
+} */
 
 .menu {
     grid-area: menu;
@@ -47,7 +47,7 @@
     flex-basis: 4em;
 }
 
-.content {
+/* .content {
     position: absolute;
     right: 0;
     transition: all 0.3s;
@@ -58,7 +58,7 @@
 .small-content {
     padding: 10px;
     width: calc(100% - 4em);
-}
+} */
 
 .logo-space-menu-item {
     width: 14em;

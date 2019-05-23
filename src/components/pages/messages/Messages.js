@@ -14,6 +14,7 @@ import {
   Comment,
 } from "semantic-ui-react";
 import { connect } from "react-redux";
+import GridExampleCelledInternally from '../student/GridExampleCelledInternally';
 
 class Messages extends Component {
   render() {
@@ -94,8 +95,10 @@ class Messages extends Component {
             </Segment>
           </Grid.Column>
         </Grid.Row>
-      </Grid>
+      </Grid>,
+      <GridExampleCelledInternally/>
     ];
+    
   }
 }
 
