@@ -6,12 +6,14 @@ import UserManagement from '.././pages/UserManagement'
 import CardForm from '.././pages/Card'
 import Departments from '.././pages/Departments'
 import Messages from '.././pages/messages/Messages'
+import Faculties from '.././pages/Faculties'
 
 export default () => (
   <Layout>
     <Route exact path="/" component={Home} />
     <Route path="/Departments" component={Departments} />
     <Route path="/Messages" component={Messages} />
+    <Route path="/Faculties" component={Faculties} />
     <Route path="/userManagement" component={UserManagement} />
     <Route path="/card" component={CardForm} />
   </Layout>
