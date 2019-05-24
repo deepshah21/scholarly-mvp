@@ -17,7 +17,7 @@ class SideMenu extends Component {
     getMenu() {
         const {activeItem} = this.state;
         return (
-            <Menu fixed='left' borderless className={(this.props.smallMenu ? 'small-side' : '') + ' side'} vertical>
+            <Menu fixed='left' borderless className={(this.props.smallMenu ? 'small-side' : '') + ' side'} inverted pointing vertical>
                 <Menu.Item as={Link} to={'/'} name='dashboard' active={activeItem === 'dashboard'}
                            onClick={this.handleItemClick}>
                     <TextIcon hideText={this.props.smallMenu} color='teal' name='home'>
@@ -32,7 +32,7 @@ class SideMenu extends Component {
                         Departments
                     </TextIcon>
                 </Menu.Item>
-
+  
                 <Menu.Item as={Link} to={'/messages'} name='messages'
                            active={activeItem === 'messages'}
                            onClick={this.handleItemClick}>

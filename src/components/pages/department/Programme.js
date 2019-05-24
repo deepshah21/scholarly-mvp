@@ -10,9 +10,25 @@ import {
   Table
 } from "semantic-ui-react";
 import { connect } from "react-redux";
+import data from '../../../data.json';
+
+const Pro = () => {
+  return(
+    data.programme.map(item => (
+      <Table.Row key={item.id}>
+    <Table.Cell >{item.department}</Table.Cell>
+    <Table.Cell >{item.programme}</Table.Cell>
+    <Table.Cell>
+      <Button size="mini" icon><Icon name="pencil" /></Button>
+      <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
+      </Table.Cell>
+  </Table.Row>
+   )) 
+  )
+};
 
 class Programme extends Component {
- 
+  
   render() {
     return [
       <Segment>
@@ -25,46 +41,9 @@ class Programme extends Component {
               <Table.HeaderCell width={2}>Actions</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
-
           <Table.Body>
-            <Table.Row>
-              <Table.Cell >
-                Mechanical  
-              </Table.Cell>
-              <Table.Cell >
-                UG 
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell >
-                Mechanical
-              </Table.Cell>
-              <Table.Cell >
-                PG
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell >
-                Electrical
-              </Table.Cell>
-              <Table.Cell >
-                UG
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>
+            <Pro/>
           </Table.Body>
-
           <Table.Footer fullWidth>
             <Table.Row>
               <Table.HeaderCell colSpan={5} />

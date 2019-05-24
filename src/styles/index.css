@@ -19,9 +19,11 @@
                           "maincontent";
     min-height: 100vh;
 } */
-.top-pading{
-    padding-top: 70px
+
+.paddingTop{
+    padding-top: 90px
 }
+
 
 .menu {
     grid-area: menu;

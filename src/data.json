@@ -1,0 +1,128 @@
+{
+    "department":[
+     {
+        "id":1,
+        "name":"Information and Technology",
+        "description":"computer and science",
+        "hod":"Narendra Chauhan"
+     },
+     {
+        "id":2,
+        "name":"Mechanicale",
+        "description":"mechanics and Automobiles",
+        "hod":"Brijesh Patel"
+     }
+    ],
+    "programme":[
+        {
+           "id":1,
+           "department":"Information and Technology",
+           "programme":"UG"
+        },
+        {
+           "id":2,
+           "department":"Mechanicale",
+           "programme":"UG"
+        },
+        {
+            "id":3,
+            "department":"Mechanicale",
+            "programme":"PG"
+         }
+       ],
+       "devisions" : [
+        {
+            "id":1,
+            "department":"Mechanicale",
+            "programme":"PG",
+            "devision" : "FY",
+            "mentors":"Jinash Mandora"
+        },
+        {
+            "id":2,
+            "department":"Mechanicale",
+            "programme":"UG",
+            "devision" : "SY",
+            "mentors":"Piyush Dhamecha"
+         },{
+            "id":3,
+            "department":"Information and Technology",
+            "programme":"UG",
+            "devision" : "TY",
+            "mentors":"Raman Lal"
+         }
+       ],
+       "subjects":[
+           {
+            "code":123456,
+            "name":"Data Structure and Algo"
+           },{
+            "code":123469,
+            "name":"Operating System"
+           },{
+            "code":123464,
+            "name":"Relational Database and Management Sys"
+           }
+       ],
+       "faculties":[
+           {
+            "user_id":44,
+            "empid":1,
+            "name":"jhon cena",
+            "department_id":2,
+            "designation": "Jr. Assistant Professor"
+           },
+           {
+            "user_id":45,
+            "empid":2,
+            "name":"Ram  lal",
+            "department_id":1,
+            "designation": "Sr. Assistant Professor"
+           },
+           {
+            "user_id":46,
+            "empid":3,
+            "name":"Salman Khan",
+            "fname":"salman",
+            "lname":"khan",
+            "mname":"salim",
+            "experience":5,
+            "department_id":1,
+            "designation": "Head Of Department"
+           }
+       ],
+    
+
+    "users": [
+      {
+        "id": 0,
+        "name": "Adam Carter",
+        "work": "Unilogic",
+        "email": "adam.carter@unilogic.com",
+        "dob": "1978",
+        "address": "83 Warner Street",
+        "city": "Boston",
+        "optedin": true
+      },
+      {
+        "id": 1,
+        "name": "Leanne Brier",
+        "work": "Connic",
+        "email": "leanne.brier@connic.org",
+        "dob": "13/05/1987",
+        "address": "9 Coleman Avenue",
+        "city": "Toronto",
+        "optedin": false
+      }
+    ],
+    "images": [
+      "img0.png",
+      "img1.png",
+      "img2.png"
+    ],
+    "coordinates": {
+        "x": 35.12,
+        "y": -21.49
+    },
+    "price": "$59,395"
+  }

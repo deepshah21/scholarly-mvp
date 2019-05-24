@@ -11,13 +11,30 @@ import {
 } from "semantic-ui-react";
 import { connect } from "react-redux";
 
+import data from '../../../data.json';
+
+const SubsList = () => {
+    return(
+      data.subjects.map(item => (
+        <Table.Row key={item.code}> 
+             <Table.Cell >{item.code}</Table.Cell>
+             <Table.Cell >{item.name}</Table.Cell>
+             <Table.Cell>
+                <Button size="mini" icon><Icon name="pencil" /></Button>
+                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
+                </Table.Cell>
+        </Table.Row>
+      ))
+    )
+  } 
+
+
 class Subjects extends Component {
  
   render() {
     return [
       <Segment>
         <Header>Subjects 
-          
         </Header>
         <Table compact celled>
           <Table.Header fullWidth>
@@ -29,43 +46,8 @@ class Subjects extends Component {
           </Table.Header>
 
           <Table.Body>
-            <Table.Row>
-              <Table.Cell >
-                753159
-              </Table.Cell>
-              <Table.Cell >
-                Data Structure and Algorithms
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell >
-                456654
-              </Table.Cell>
-              <Table.Cell >
-                Relational Database Management System
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>          
-            <Table.Row>
-              <Table.Cell >
-                852258
-              </Table.Cell>
-              <Table.Cell >
-                Operating System
-              </Table.Cell>
-              <Table.Cell>
-                <Button size="mini" icon><Icon name="pencil" /></Button>
-                <Button  color="red" size="mini" icon><Icon name="delete" /></Button>
-                </Table.Cell>
-            </Table.Row>          
-            </Table.Body>
+            <SubsList/>
+          </Table.Body>
 
           <Table.Footer fullWidth>
             <Table.Row>
