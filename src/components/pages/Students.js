@@ -12,6 +12,7 @@ import {
   Image,Card,Message,Grid
 } from "semantic-ui-react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
 import CreatableSelect from 'react-select/lib/Creatable';
 import data from "../../data.json";
 
@@ -152,11 +153,12 @@ class Students extends Component {
             <Menu.Item name='Event Seminar' active={activeItem === 'Event Seminar'} onClick={this.handleItemClick} />
             <Menu.Item name='Accounts Fees' active={activeItem === 'Accounts Fees'} onClick={this.handleItemClick} />
             <Menu.Item name='Transport' active={activeItem === 'Transport'} onClick={this.handleItemClick} />
+            <Menu.Item name='Comments' active={activeItem === 'Comments'} onClick={this.handleItemClick} />
           </Menu>
         </Grid.Column>
 
         <Grid.Column stretched width={13}>
-          <Segment>
+          <Segment >
             This is an stretched grid column. This segment will always match the tab height
           </Segment>
         </Grid.Column>

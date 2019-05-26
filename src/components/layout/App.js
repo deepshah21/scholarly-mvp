@@ -8,6 +8,7 @@ import Departments from '.././pages/Departments'
 import Messages from '.././pages/messages/Messages'
 import Faculties from '.././pages/Faculties'
 import Students from '.././pages/Students'
+import Fees from '.././pages/Fees'
 
 export default () => (
   <Layout>
@@ -16,6 +17,7 @@ export default () => (
     <Route path="/Messages" component={Messages} />
     <Route path="/Faculties" component={Faculties} />
     <Route path="/Students" component={Students} />
+    <Route path="/Fees" component={Fees} />
     <Route path="/userManagement" component={UserManagement} />
     <Route path="/card" component={CardForm} />
   </Layout>
