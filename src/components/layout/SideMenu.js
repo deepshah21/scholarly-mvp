@@ -49,6 +49,15 @@ class SideMenu extends Component {
                     </TextIcon>
                 </Menu.Item>
 
+                <Menu.Item as={Link} to={'/students'} name='students'
+                           active={activeItem === 'students'}
+                           onClick={this.handleItemClick}>
+                    <TextIcon hideText={this.props.smallMenu} name='student'>
+                        Students
+                    </TextIcon>
+                </Menu.Item>
+
+
                 <Menu.Item as={Link} to={'/appointments'} name='appointments'
                            active={activeItem === 'appointments'}
                            onClick={this.handleItemClick}>
