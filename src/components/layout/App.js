@@ -17,6 +17,10 @@ export default () => (
     <Route path="/Messages" component={Messages} />
     <Route path="/Faculties" component={Faculties} />
     <Route path="/Students" component={Students} />
+    {/* <Route path="/Students/id/" component={Students} />
+    <Route path="/Students/id/attendance" component={Students} />
+    <Route path="/Students/id/results" component={Students} />
+    <Route path="/Students/id/library" component={Students} /> */}
     <Route path="/Fees" component={Fees} />
     <Route path="/userManagement" component={UserManagement} />
     <Route path="/card" component={CardForm} />
