@@ -170,5 +170,45 @@
         "x": 35.12,
         "y": -21.49
     },
-    "price": "$59,395"
+    "price": "$59,395",
+    "attendanceList": [
+      { 
+        "id" : 1,
+        "subjectName": "Oprating System",
+        "semId": 1,
+        "currentAttendance": 34,
+        "totalAttendance": 40
+      },
+      {
+        "id" : 2,
+        "subjectName": "Advance Java",
+        "semId": 1,
+        "currentAttendance": 34,
+        "totalAttendance": 40
+      },
+      {
+        "id" : 3,
+        "subjectName": "Computer Networks",
+        "semId": 1,
+        "currentAttendance": 34,
+        "totalAttendance": 40
+      },
+      {
+        "id" : 4,
+        "subjectName": "Oprating System",
+        "semId": 2,
+        "currentAttendance": 13,
+        "totalAttendance": 40
+      }
+    ],
+    "semesterList": [{
+      "name": "Semestar 1",
+      "id": 1
+    },
+    {
+      "name": "Semestar 2",
+      "id": 2
+    }]
+
+    
   }
