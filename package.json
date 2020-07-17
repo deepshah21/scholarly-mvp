@@ -7,7 +7,7 @@
     "bootstrap": "^3.3.7",
     "file-loader": "^1.1.9",
     "informed": "^1.10.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "prop-types": "latest",
     "react": "^16.4.2",
     "react-app-rewired": "^1.6.2",
